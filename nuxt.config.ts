@@ -18,5 +18,11 @@ export default defineNuxtConfig({
 			}
 		]
 	}
+  },
+  runtimeConfig: { // this expose every variable to server side
+	currencyKey: process.env.NUXT_CURRENCY_API_KEY,
+	//to expose variables to public frontend we can use
+	//public: {
+	//}
   }
 })
