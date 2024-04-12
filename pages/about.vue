@@ -1,14 +1,17 @@
 <template>
 	<div>
 	  <h2>About</h2>
-	  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores magnam similique numquam explicabo eaque ut nostrum cumque labore officia dolores eum quis, omnis deserunt rem? Ullam consequatur beatae sunt omnis?</p>
-	  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores magnam similique numquam explicabo eaque ut nostrum cumque labore officia dolores eum quis, omnis deserunt rem? Ullam consequatur beatae sunt omnis?</p>
-	  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores magnam similique numquam explicabo eaque ut nostrum cumque labore officia dolores eum quis, omnis deserunt rem? Ullam consequatur beatae sunt omnis?</p>
+	   <div>  {{ data }}</div>
 	</div>
   </template>
   
   <script setup>
-  
+		const {data} = await useFetch('api/products?name=Aldair_Playboy',{
+			method: 'POST',
+			body: {
+				age: 25
+			}
+		})
   </script>
   
   <style scoped>
