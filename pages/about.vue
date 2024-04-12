@@ -6,12 +6,7 @@
   </template>
   
   <script setup>
-		const {data} = await useFetch('api/products?name=Aldair_Playboy',{
-			method: 'POST',
-			body: {
-				age: 25
-			}
-		})
+		const {data} = await useFetch('/api/currency/GBP')
   </script>
   
   <style scoped>
